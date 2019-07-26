@@ -19,7 +19,9 @@ class App extends Component {
         <p>
           Start editing to see some magic happen :)12
         </p>
+        <hr/>
         <Simple/>
+        <hr/>
       </div>
     );
   }

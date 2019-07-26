@@ -1,17 +1,32 @@
-import {memo} from 'react'
 import React from 'react'
+import {useState} from 'react'
+import {Provider, useStore} from 'reto'
 
-export function FooStore() {
-  const [x, setX] = useState(initial)
+function FooStore() {
+  const [counter, setCounter] = useState(1)
   return {
-    x,
-    setX
+    counter,
+    setCounter
   }
 }
 
-export const Simple = memo(function Simple() {
-
+export function Simple() {
   return (
-    <div>123</div>
+    <Provider of={FooStore}>
+      <App/>
+    </Provider>
   )
-})
+}
+
+function App() {
+  const fooStore = useStore(FooStore)
+  function changeStore() {
+    fooStore.setCounter(fooStore.counter + 1)
+  }
+  return (
+    <div>
+      <p>{fooStore.counter}</p>
+      <button onClick={changeStore}>Change</button>
+    </div>
+  )
+}
