@@ -5,6 +5,7 @@ import './style.css';
 import {Simple} from './examples/simple'
 import {WithArgs} from './examples/with-args'
 import {MultiLevel} from './examples/multi-level'
+import {Dependence} from './examples/dependence'
 
 class App extends Component {
   constructor() {
@@ -27,6 +28,9 @@ class App extends Component {
         <hr/>
         <h2>Multi Level</h2>
         <MultiLevel/>
+        <hr/>
+        <h2>Dependence</h2>
+        <Dependence/>
         <hr/>
       </div>
     );
