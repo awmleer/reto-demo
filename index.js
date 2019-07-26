@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import Hello from './Hello';
 import './style.css';
-import {Simple} from './examples/simple.jsx'
-import {WithArgs} from './examples/with-args.jsx'
+import {Simple} from './examples/simple'
+import {WithArgs} from './examples/with-args'
+import {MultiLevel} from './examples/multi-level'
 
 class App extends Component {
   constructor() {
@@ -23,6 +24,9 @@ class App extends Component {
         <hr/>
         <h2>With Args</h2>
         <WithArgs/>
+        <hr/>
+        <h2>Multi Level</h2>
+        <MultiLevel/>
         <hr/>
       </div>
     );
