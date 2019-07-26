@@ -2,21 +2,21 @@ import React from 'react'
 import {useState} from 'react'
 import {Provider, useStore} from 'reto'
 
-function FooStore() {
-  const [counter, setCounter] = useState(0)
-  function reset() {
-    setCounter(0)
-  }
+
+
+// function FooStore(initial = 1) {
+//   const [counter, setCounter] = useState(initial)
+function FooStore(initial) {
+  const [counter, setCounter] = useState(initial)
   return {
     counter,
-    setCounter,
-    reset,
+    setCounter
   }
 }
 
-export function Simple() {
+export function WithInitial() {
   return (
-    <Provider of={FooStore}>
+    <Provider of={FooStore} args=[]>
       <App/>
     </Provider>
   )
@@ -31,7 +31,6 @@ function App() {
     <div>
       <p>{fooStore.counter}</p>
       <button onClick={changeStore}>Change</button>
-      <button onClick={fooStore.reset}>Reset</button>
     </div>
   )
 }
