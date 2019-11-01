@@ -8400,10 +8400,10 @@ ret@~0.1.10:
   resolved "https://registry.npm.taobao.org/ret/download/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha1-uKSCXVvbH8P29Twrwz+BOIaBx7w=
 
-reto@^0.5.0:
-  version "0.5.1"
-  resolved "https://registry.npm.taobao.org/reto/download/reto-0.5.1.tgz#162dc1551e1c0c6bbc6c27e0d1fb75eb1c08435e"
-  integrity sha1-Fi3BVR4cDGu8bCfg0ft16xwIQ14=
+reto@^0.8.0:
+  version "0.8.1"
+  resolved "https://registry.npm.taobao.org/reto/download/reto-0.8.1.tgz#8b22ed872e7e646921c8db10d0a2229bf718efdd"
+  integrity sha1-iyLthy5+ZGkhyNsQ0KIim/cY790=
 
 rework-visit@1.0.0:
   version "1.0.0"
